@@ -13,6 +13,7 @@ for (let i = 0; i < 6; i++) {
 
 	let image = document.createElement("img"); // creating an image
 	image.src = `./images/${i + 1}.jpg`;
+	image.className = "lazyload";
 	images.push(image);
 
 	div.style.gridRowStart = i + 1; // row start of each image
